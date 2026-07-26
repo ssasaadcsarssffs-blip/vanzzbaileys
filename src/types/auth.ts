@@ -1,8 +1,5 @@
-/**
- * Authentication Types
- *
- * TODO:
- * Define authentication interfaces.
- */
+import type { AuthenticationCreds } from "../auth"
 
-export {}
+export interface AuthState {
+  creds: AuthenticationCreds
+}
