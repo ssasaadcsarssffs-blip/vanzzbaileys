@@ -1,8 +1,8 @@
-/**
- * Authentication Storage
- *
- * TODO:
- * Implement auth storage.
- */
+import type { AuthenticationCreds } from "./credentials"
+import type { SignalKeyStore } from "./keys"
 
-export {}
+export interface AuthenticationState {
+  creds: AuthenticationCreds
+
+  keys: SignalKeyStore
+}
