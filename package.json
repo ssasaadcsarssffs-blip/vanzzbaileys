@@ -1,0 +1,87 @@
+{
+  "name": "vanzzbaileys",
+  "version": "0.0.1-alpha.0",
+  "description": "Next Generation WhatsApp Web API",
+  "author": "Vanzz",
+  "license": "MIT",
+  "homepage": "https://github.com/ssasaadcsarssffs-blip/vanzzbaileys",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssasaadcsarssffs-blip/vanzzbaileys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ssasaadcsarssffs-blip/vanzzbaileys/issues"
+  },
+  "keywords": [
+    "whatsapp",
+    "whatsapp-web",
+    "baileys",
+    "multi-device",
+    "md",
+    "typescript",
+    "pairing-code",
+    "signal",
+    "noise",
+    "protobuf",
+    "native-flow",
+    "carousel",
+    "interactive",
+    "button",
+    "buttonv2",
+    "airich"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup",
+    "clean": "rimraf dist",
+    "lint": "eslint src --ext .ts",
+    "test": "vitest",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^2.6.3",
+    "@cacheable/node-cache": "^1.5.5",
+    "async-mutex": "^0.5.0",
+    "axios": "^1.11.0",
+    "eventemitter3": "^5.0.1",
+    "libsignal": "^2.0.1",
+    "link-preview-js": "^3.1.0",
+    "long": "^5.3.2",
+    "lru-cache": "^11.1.0",
+    "pino": "^9.7.0",
+    "protobufjs": "^7.5.4",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/ws": "^8.18.1",
+    "eslint": "^9.35.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
